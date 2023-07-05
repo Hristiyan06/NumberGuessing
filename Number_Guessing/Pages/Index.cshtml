@@ -1,0 +1,24 @@
+﻿@page
+<link rel="stylesheet" href="index.cshtml"/>
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+
+    <form method="post">
+        <h1 class="display-2">Guess the numbers</h1>
+
+        <input type="number" name="GuessedNumber">
+
+        <input type="submit">
+
+        <h2 class="display-4">@Model.Message</h2>
+
+        <h3 class="display-15">@Model.Hint</h3>
+        <h4 class="display-15">Attempts: @Model.Counter</h4>
+        <h5 class="display-1">@Model.BadWords</h5>
+    </form>
+
+</div>
